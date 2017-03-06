@@ -20,7 +20,7 @@ ExternalProject_Add(ARToolkit
 	BINARY_DIR ARToolkit-prefix/src/ARToolkit
 
 	# Download
-	SVN_REPOSITORY svn://svn.code.sf.net/p/artoolkit/code/trunk/artoolkit
+	SVN_REPOSITORY http://svn.code.sf.net/p/artoolkit/code/trunk/artoolkit
 	UPDATE_COMMAND echo "Do not update"
 	# Patch
 	PATCH_COMMAND COMMAND patch -p0 < ${CMAKE_CURRENT_SOURCE_DIR}/patch_auto_config
